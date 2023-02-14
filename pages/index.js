@@ -18,6 +18,7 @@ export default function Home() {
       });
 
       const data = await response.json();
+      console.log(data, '123')
       if (response.status !== 200) {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
